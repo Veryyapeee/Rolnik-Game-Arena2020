@@ -21,6 +21,7 @@ As user:
 - Add rest of the participants to team
 - Upload team logo
 - Edit team information
+
 As admin:
 - Display every team and accept/remove application
 - Send mail to each captain of the team

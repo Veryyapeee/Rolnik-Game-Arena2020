@@ -1,0 +1,422 @@
+$background: #1f1f1f;
+$dot: rgba(255, 255, 255, 0.1);
+$red: #ec5a5a;
+$green: #00ac3e;
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+//SCROLL
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  background: $background;
+  margin: 0;
+  min-height: 100vh;
+  padding: 80px 0;
+  font-size: 1rem;
+}
+
+//BUTTON REJESTRACJA
+
+.zarejestruj {
+  color: #fff;
+  font-size: 0.7em;
+  margin: 20px auto 30px auto;
+  text-align: center;
+  button {
+    background: $green;
+    color: #fff;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 60%;
+    height: 2em;
+    max-width: 300px;
+  }
+}
+
+// Hidding before wide version
+.find_us {
+  display: none;
+}
+
+.loading_an {
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+
+  :nth-child(1) {
+    display: block;
+    text-align: left;
+  }
+  :nth-child(2) {
+    display: block;
+    text-align: center;
+  }
+  ::nth-child(3) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 56%;
+  max-width: 411px;
+}
+
+main {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  max-width: 287px;
+
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.hr {
+  padding: 10px 0;
+}
+
+#d,
+#h,
+#m,
+#s {
+  position: relative;
+  bottom: -6px;
+}
+
+.dschr {
+  font-size: 0.5em;
+}
+
+.social_icons {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  img {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+  }
+  #yt {
+    width: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .social_icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .zarejestruj button {
+    min-width: 300px;
+  }
+
+  .login {
+    position: static;
+    grid-template-columns: 150px 120px 88px 88px;
+    justify-content: flex-end;
+    :nth-child(1) {
+      float: none;
+      text-align: right;
+      margin-right: 10px;
+    }
+    :nth-child(3) {
+      text-align: center;
+    }
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 35% 35% 10% 10%;
+  }
+  header {
+    display: flex;
+    align-self: flex-end;
+  }
+  .logo {
+    position: relative;
+    bottom: 0;
+  }
+  main {
+    grid-template-columns: repeat(4, 25%);
+    max-width: 992px;
+    grid-template-rows: 200px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: 30% 70%;
+  }
+
+  .social_icons {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    grid-row: 2;
+    img {
+      position: relative;
+      bottom: -17px;
+      left: 15px;
+      width: 30px;
+      height: 30px;
+      margin-left: 17px;
+    }
+  }
+
+  .find_us {
+    display: block;
+    color: #ec5a5a;
+    line-height: 24px;
+    font-size: 0.9em;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .loading_an {
+    display: flex;
+    justify-content: flex-end;
+    grid-row: 2;
+    grid-column: 3;
+    margin-right: 15px;
+  }
+}
+
+// Loading dots
+@keyframes dot-keyframes {
+  0% {
+    background: $dot;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    background: $red;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    background: $dot;
+    transform: scale(1, 1);
+  }
+}
+
+.dot {
+  margin-top: 20px;
+  margin-right: 7px;
+  animation: dot-keyframes 3s infinite ease-in-out;
+  background-color: $dot;
+  display: inline-block;
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+
+  &:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 1s;
+  }
+  &:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+//EZ MODAL
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  .splash {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 24px auto;
+    max-width: 392px;
+  }
+  .content {
+    padding-top: 120px;
+  }
+  .close {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    max-width: 95px;
+  }
+}
+.close-button {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+@media only screen and (min-width: 1150px) {
+  .content {
+    width: 60%;
+    margin: 80px auto 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    a {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .cls {
+    grid-column: span 2;
+    padding-top: 32px;
+  }
+  .splash {
+    margin-top: 140px;
+  }
+}
+
+//MODAL 2
+
+.modal2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+  .close2 {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    max-width: 95px;
+  }
+}
+
+.trigger2:hover {
+  cursor: pointer;
+}
+
+.content2 {
+  color: #fff;
+  padding: 22px;
+  width: 83%;
+  max-width: 450px;
+  background: #1f1f1f;
+  margin: 42px auto;
+  border-radius: 15px;
+}
+
+.docs {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 12px;
+  div {
+    font-size: 0.7em;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.close-button2 {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.show-modal2 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.title_modal {
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 700px) {
+  .content2 {
+    margin-top: 150px;
+  }
+}

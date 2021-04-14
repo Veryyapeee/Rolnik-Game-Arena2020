@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Inria Sans";
+  src: url("inria/InriaSans-Bold.eot");
+  src: url("inria/InriaSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("inria/InriaSans-Bold.woff2") format("woff2"),
+    url("inria/InriaSans-Bold.woff") format("woff"),
+    url("inria/InriaSans-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * source-sans-pro:
+ *   - http://typekit.com/eulas/00000000000000003b9b3d63
+ *   - http://typekit.com/eulas/00000000000000003b9b3d67
+ *   - http://typekit.com/eulas/00000000000000003b9b3d68
+ *   - http://typekit.com/eulas/00000000000000003b9b3d64
+ *   - http://typekit.com/eulas/00000000000000003b9b3d65
+ *   - http://typekit.com/eulas/00000000000000003b9b3d66
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-01-24 16:21:24 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=okr2igk&ht=tk&f=17265.17267.17268.17269.17272.17273&a=37194462&app=typekit&e=css");
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/61f808/00000000000000003b9b3d63/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/61f808/00000000000000003b9b3d63/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/61f808/00000000000000003b9b3d63/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/422d60/00000000000000003b9b3d67/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/422d60/00000000000000003b9b3d67/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/422d60/00000000000000003b9b3d67/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/9373a0/00000000000000003b9b3d68/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/9373a0/00000000000000003b9b3d68/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/9373a0/00000000000000003b9b3d68/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/ffb1e2/00000000000000003b9b3d64/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ffb1e2/00000000000000003b9b3d64/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ffb1e2/00000000000000003b9b3d64/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/348732/00000000000000003b9b3d65/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/348732/00000000000000003b9b3d65/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/348732/00000000000000003b9b3d65/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("https://use.typekit.net/af/31c386/00000000000000003b9b3d66/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/31c386/00000000000000003b9b3d66/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/31c386/00000000000000003b9b3d66/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=i6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.tk-source-sans-pro {
+  font-family: "source-sans-pro", sans-serif;
+}
+#logowanie {
+  font-family: "Inria Sans";
+}
+
+main,
+button,
+input {
+  font-family: "source-sans-pro";
+}

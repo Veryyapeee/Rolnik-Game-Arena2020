@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="theme-color" content="#1f1f1f" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <title>RGA 2020</title>
+  </head>
+  <body>
+    <div class="login">
+      <span class="trigger2">Dokumenty</span>
+
+      <a href="find_team.php">Szukaj teamu</a>
+
+      <a href="reg_cosplay.php">Cosplay</a>
+
+      <a href="zaloguj_user.php">Zaloguj &rarr;</a>
+    </div>
+
+    <header>
+      <img src="assets/logo-main.svg" alt="" class="logo" />
+    </header>
+
+    <main>
+      <div class="hr">
+        <div id="d"></div>
+        <div class="dschr">dni</div>
+      </div>
+      <div class="hr">
+        <div id="h"></div>
+        <div class="dschr">godzin</div>
+      </div>
+      <div class="hr">
+        <div id="m"></div>
+        <div class="dschr">minut</div>
+      </div>
+      <div class="hr">
+        <div id="s"></div>
+        <div class="dschr">sekund</div>
+      </div>
+    </main>
+
+    <script src="js/timer.js"></script>
+
+    <div class="zarejestruj">
+      Zapisy już ruszyły! <br />
+      <button id="rej_button" class="trigger">Zarejestruj drużynę</button>
+    </div>
+
+    <footer>
+      <div class="find_us">
+        Znajdź nas również tutaj &darr;
+      </div>
+      <div class="social_icons">
+        <a
+          title="League Of Legends"
+          href="https://www.twitch.tv/rga_lol"
+          target="_blank"
+          ><img src="assets/twitch.svg" alt="" />
+        </a>
+        <a title="CS:GO" href="https://www.twitch.tv/rga_csgo" target="_blank"
+          ><img src="assets/twitch.svg" alt="" />
+        </a>
+        <a href="https://discordapp.com/invite/BVnTAey" target="_blank"
+          ><img src="assets/dsc.svg" alt="" />
+        </a>
+        <a href="https://www.facebook.com/RGARolnik/" target="_blank"
+          ><img src="assets/fb.png" alt="" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCmDKW761OpXKtWCqLNa52ow"
+          target="_blank"
+          ><img id="yt" src="assets/yt.png" alt=""
+        /></a>
+      </div>
+      <div class="loading_an">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </footer>
+
+    <!--MODALS-->
+    <div class="modal">
+      <div class="content">
+        <div class="lolspl">
+          <a href="reg_lol.php"
+            ><img src="assets/splashlol.png" alt="" class="splash" id="splash1"
+          /></a>
+        </div>
+        <div class="csspl">
+          <a href="reg_cs.php"
+            ><img src="assets/splashcsgo.png" alt="" class="splash"
+          /></a>
+        </div>
+        <div class="cls">
+          <span class="close-button"
+            ><img src="assets/exit.png" alt="" class="close"
+          /></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal2">
+      <div class="content2">
+        <span class="title_modal">Dokumenty do pobrania</span>
+
+        <div class="docs">
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div><a href="">Regulamin Imprezy</a></div>
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div><a href="">Zgoda na przetwarzanie danych osobowych</a></div>
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div><a href="">Regulamin turnieju League of Legends</a></div>
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div>
+            <a href="">Regulamin turnieju Counter-Strike: Global Offensive</a>
+          </div>
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div><a href="">Regulamin Konkursu Cosplay</a></div>
+          <div><img src="assets/doc.svg" alt="" /></div>
+          <div><a href="">Rozporządzenie o Ochronie Danych Osobowych</a></div>
+        </div>
+      </div>
+      <div class="cls">
+        <span class="close-button2"
+          ><img src="assets/exit.png" alt="" class="close2"
+        /></span>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+  </body>
+</html>

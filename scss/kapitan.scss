@@ -1,0 +1,174 @@
+$background: #1f1f1f;
+$grey: #242424;
+$green_btn: #00ac3e;
+$blue_btn: #2bafff;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $background;
+}
+* {
+  box-sizing: border-box;
+}
+
+//SCROLL
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+#kontener {
+  width: 83%;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 1.5em;
+  padding-bottom: 32px;
+}
+
+#logo {
+  float: left;
+  display: block;
+  height: auto;
+  width: 80px;
+}
+#logout {
+  display: block;
+  float: right;
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 0.9em;
+}
+
+#logowanie {
+  font-size: 2em;
+  color: #fff;
+  display: block;
+  margin-top: 0.8em;
+}
+
+main {
+  background: $grey;
+  padding: 22px;
+  border-radius: 15px;
+  border: 1px solid #444;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.team_name {
+  padding-top: 8px;
+  font-size: 0.9em;
+  line-height: 16px;
+  float: left;
+}
+
+#game_logo {
+  display: block;
+  height: auto;
+  width: 100px;
+  float: right;
+}
+
+#logo_tag {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+}
+
+.logo_con {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 4px;
+}
+
+#team_logo {
+  display: block;
+  width: 70px;
+  height: auto;
+  grid-row: span 2;
+}
+
+.button_logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button_dsc {
+  font-size: 0.5em;
+  display: flex;
+  align-items: flex-start;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#zawodnicy {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(15, auto);
+  span,
+  .zawbtn {
+    display: block;
+    grid-column: span 2;
+  }
+  .first_span {
+    margin-top: 18px;
+  }
+  span {
+    margin-top: 10px;
+  }
+  button {
+    color: #fff;
+    width: 100%;
+    border: none;
+    height: 28px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  #btn_jest {
+    background: $green_btn;
+  }
+  #btn_nie {
+    background: $blue_btn;
+  }
+
+  .szukaj_team {
+    margin-top: 20px;
+
+    button {
+      background: $green_btn;
+      height: 34px;
+      border-radius: 16px;
+    }
+  }
+
+  .kontakt {
+    margin-top: 20px;
+    button {
+      background: $blue_btn;
+      height: 34px;
+      border-radius: 16px;
+      width: 80%;
+      float: right;
+    }
+  }
+
+  .brakuje_q {
+    margin-top: 6px;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 10px;
+  }
+}
